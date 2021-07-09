@@ -17,4 +17,16 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/autor', 'PagesController@autor')->name('autor');
+Route::get('/autor', 'PagesController@verAutor')->name('autor');
+
+
+Route::get('/crearAutor', 'PagesController@crearAutorVista')->name('autor.vista.crear');
+Route::post('/', 'PagesController@crearAutor')->name('autor.crear');
+
+Route::delete('eliminarAutor/{id}','PagesController@eliminarAutor')->name('autor.eliminar');
+
+Route::get('editarAutor/{id}','PagesController@editarAutorVista')->name('autor.vista.editar');
+Route::put('editarAutor/{id}','PagesController@editarAutor')->name('autor.editar');
+
 Route::get('/home', 'HomeController@index')->name('home');
