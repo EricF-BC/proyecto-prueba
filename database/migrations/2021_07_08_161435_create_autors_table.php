@@ -13,15 +13,10 @@ class CreateAutorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('autors', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('nombre');
-            $table->string('apellidoPaterno');
-            $table->string('apellidoMaterno');
-            $table->integer('edad');
-            $table->Text('descripcion');
-            $table->timestamps();
-        });
+
+
+
+
     }
 
     /**
@@ -31,6 +26,6 @@ class CreateAutorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('autors');
+
     }
 }
