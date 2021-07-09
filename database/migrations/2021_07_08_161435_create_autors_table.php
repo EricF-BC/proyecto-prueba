@@ -19,7 +19,7 @@ class CreateAutorsTable extends Migration
             $table->string('apellidoPaterno');
             $table->string('apellidoMaterno');
             $table->integer('edad');
-            $table->Text('descipcion');
+            $table->Text('descripcion');
             $table->timestamps();
         });
     }

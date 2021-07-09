@@ -12,7 +12,7 @@ class PagesController extends Controller
     }
 
     public function verAutor(){
-        $autor = App\Autor::all();
+        $autor = App\Autor::paginate(5);
         return view ('Autor.autor',compact('autor'));
     }
     public function crearAutorVista(){

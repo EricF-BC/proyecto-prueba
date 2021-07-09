@@ -37,10 +37,11 @@
       @endforeach
     </tbody>
   </table>
-
+  {{ $autor->links() }}
 
   <a  class="btn btn-success" href="{{ route('autor.vista.crear') }}"> Crear Autor</a>
 
 </div>
+
 
 @endsection
